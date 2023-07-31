@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Speed Changer",
+  "version": "1.0",
+  "description": "Changes YouTube video playback speed up to 4x.",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
